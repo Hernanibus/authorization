@@ -17,7 +17,9 @@ Using MapResolver
 =================
 
 ``MapResolver`` lets you map resource class names to policy classnames, policy
-objects, or factory callables::
+objects, or factory callables.
+To do so, modify ``Application.php``'s method **getAuthorizationService
+( ServerRequestInterface $request )** as follows::
 
     use Authorization\Policy\MapResolver;
 
